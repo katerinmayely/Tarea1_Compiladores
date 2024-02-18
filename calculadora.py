@@ -5,7 +5,7 @@
 import math
 import re
 
-#Definir la expresion regular de los parametros.
+#Expresión Regular de los números permitidos
 numero = re.compile(r'\d*\.?\d+')
 
 def suma():
@@ -53,7 +53,7 @@ def solicitar_dos_numeros():
                 print("El numero no debe tener el caracter \"e\" o ingreso un caracter inválido, intente de nuevo.")
     return numeros
     
-
+#Diccionario de Operaciones
 operaciones = {
     1: suma,
     2: resta,
@@ -62,6 +62,7 @@ operaciones = {
     5: raiz_cuadrada
 }
 
+#Menú
 print("Seleccione la operacion a realizar: ")
 print("1. Suma \n2. Resta \n3. Multiplicación \n4. División \n5. Raiz Cuadrada \n6. Salir")
 opcion = int(input("Ingrese su selección: "))
